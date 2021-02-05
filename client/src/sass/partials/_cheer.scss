@@ -11,7 +11,8 @@
 }
 
 .cheer {
-  @include container;
+  margin: 0 auto 500px;
+  max-width: 1000px;
   margin-bottom: 0;
   // height: 500px;
   font-family: 'Ubuntu', sans-serif;
