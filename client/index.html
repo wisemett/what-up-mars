@@ -200,18 +200,24 @@
     </section>
     <section id="message" class="cheer">
       <article class="cheer-form__container">
-        <div class="cheer-info">Send Some Messages To Elon Musk!</div>
+        <div class="cheer-info">Send a Message to Elon Musk!</div>
         <form action="" class="cheer-form">
           <label class="label-prof-img" for="image_uploads"></label>
           <div class="input-msg__container">
-            <input class="input-name" type="text" placeholder="your name?" />
-            <input
+            <input class="input-name" type="text" placeholder="Your name" />
+            <textarea
+              cols="40"
+              rows="5"
+              class="input-msg"
+              placeholder="Cheer up message for Elon Musk"
+            ></textarea>
+            <!-- <input
               class="input-msg"
               type="text"
               placeholder="cheer up message for Elon Musk"
-            />
+            /> -->
           </div>
-          <button class="submit-msg" type="submit">cheers!</button>
+          <button class="submit-msg" type="submit">POST</button>
           <input
             class="input-prof-img"
             name="image_uploads"
@@ -231,8 +237,15 @@
             <span class="cheer-time">3 min</span>
           </li> -->
         </ul>
+        <button class="cheer-more"><i class="fas fa-chevron-down"></i></button>
       </article>
     </section>
-    <footer>footer</footer>
+    <footer class="footer">
+      <h3 class="footer__heading">What's Up Mars</h3>
+      <ul class="footer__contributors">
+        <li><a href="https://github.com/hyorard-b">@hyorard-b</a></li>
+        <li><a href="https://github.com/wisemett">@wisemett</a></li>
+      </ul>
+    </footer>
   </body>
 </html>

@@ -2,8 +2,9 @@
 
 .twitter {
   font-family: 'Ubuntu', sans-serif;
-  font-size: 2rem;
+  font-size: 1rem;
   @include container;
+  color: #ccc;
 }
 
 .profile__container {
@@ -35,30 +36,36 @@
 .desc__title {
   display: block;
   color: #fff;
-  font-size: 2rem;
+  font-size: 1.7rem;
   margin-bottom: 20px;
 }
 
 .desc__contents {
-  font-size: 1.3rem;
+  font-size: 1.2rem;
+  line-height: 1.4;
 }
 
 .twitter__container {
   @include container;
   margin-top: 50px;
   margin-bottom: 50px;
-  background-color: rgba(200, 200, 200, 0.6);
+  background-color: rgba(100, 100, 100, 0.2);
   padding: 15px;
+  padding-bottom: 5px;
 }
 
 .tweet-item {
-  padding: 10px 0;
+  padding: 20px 0;
   border-bottom: 1px solid #fff;
 }
 
+.tweet-item:last-of-type {
+  border-bottom: none;
+}
+
 .tweet-prof-elon-img {
-  width: 150px;
-  height: 150px;
+  width: 100px;
+  height: 100px;
   background-image: url('../../img/tweet-elon.jpg');
   background-position: center;
   background-size: cover;
@@ -67,8 +74,8 @@
 }
 
 .tweet-prof-space-img {
-  width: 150px;
-  height: 150px;
+  width: 100px;
+  height: 100px;
   background-image: url('../../img/tweet-space.jpg');
   background-position: center;
   background-size: cover;
@@ -77,8 +84,8 @@
 }
 
 .tweet-contents-elon-img {
-  width: 100px;
-  height: 100px;
+  width: 80px;
+  height: 80px;
   background-image: url('../../img/tweet-elon.jpg');
   background-position: center;
   background-size: cover;
@@ -87,8 +94,8 @@
 }
 
 .tweet-contents-space-img {
-  width: 100px;
-  height: 100px;
+  width: 80px;
+  height: 80px;
   background-image: url('../../img/tweet-space.jpg');
   background-position: center;
   background-size: cover;
@@ -103,18 +110,19 @@
 }
 
 .tweet-prof__name {
+  font-size: 1.2rem;
   font-weight: 700;
 }
 
 .tweet-prof__username {
-  font-size: 1.8rem;
+  font-size: 1.2rem;
   font-weight: 400;
   color: rgba(200, 200, 200, 0.5);
 }
 
 .tweet-prof-desc {
   display: inline-block;
-  font-size: 1.5rem;
+  font-size: 1rem;
   font-weight: 400;
   margin-top: 15px;
 }
@@ -124,7 +132,7 @@
   color: rgb(29, 161, 242);
   border-bottom: 1px solid rgb(29, 161, 242);
   padding-bottom: 5px;
-  width: 105px;
+  width: 50px;
   margin-bottom: 15px;
 }
 
@@ -139,6 +147,6 @@
 
 .tweet-contents {
   margin-top: 15px;
-  font-size: 1.5rem;
+  font-size: 1rem;
   font-weight: 400;
 }
