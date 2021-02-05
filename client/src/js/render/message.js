@@ -2,12 +2,17 @@ import message from '../axios/message';
 
 const $msgList = document.querySelector('.cheer__list');
 const $submitBtn = document.querySelector('.submit-msg');
+const $inputName = document.querySelector('.input-name');
+const $inputMsg = document.querySelector('.input-msg');
 
 let messages = [];
 
-const watchPost = async e => {
+const watchPost = async (e) => {
   e.preventDefault();
   await message.post();
+  $inputName.value = '';
+  $inputMsg.value = '';
+
   renderMessage();
 };
 
@@ -15,14 +20,13 @@ const renderMessage = async () => {
   const res = await message.get();
   messages = [...res];
 
-  messages = messages.map(({name, contents, time}) => {
-    const 
+  messages = messages.map(({ name, contents, time }) => {
     const fTime = formatTime(time);
-    return {name, contents, fTime};
+    return { name, contents, fTime };
   });
-  
+
   $msgList.innerHTML = '';
-  messages.forEach(msg => {
+  messages.forEach((msg) => {
     $msgList.innerHTML += `
     <li class="cheer__item">
       <div class="profile-img"></div>
@@ -31,14 +35,13 @@ const renderMessage = async () => {
           <span class="user-contents">${msg.contents}</span>
         </div>
       <span class="cheer-time">${msg.fTime.year}-${msg.fTime.month}-${msg.fTime.day}</span>
-    </li> `
+    </li> `;
   });
-  
+
   $submitBtn.onclick = watchPost;
-  
 };
 
-const formatTime = time => {
+const formatTime = (time) => {
   const then = new Date(time);
 
   const year = then.getFullYear();
@@ -48,8 +51,8 @@ const formatTime = time => {
   return {
     year,
     month,
-    day
+    day,
   };
-}
+};
 
 export default renderMessage;

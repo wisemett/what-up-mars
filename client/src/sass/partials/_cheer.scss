@@ -108,11 +108,11 @@
 .cheer__container {
   margin-top: 20px;
   font-size: 1.3rem;
-  background-color: rgba(255, 255, 255, 0.5);
-  color: #000;
+  color: #fff;
   display: flex;
   flex-direction: column;
   justify-content: center;
+  position: relative;
 }
 
 .cheer__item {
@@ -150,6 +150,7 @@
   right: 40px;
   font-size: 1.2rem;
   font-weight: 700;
+  color: #bbb;
 }
 
 .cheer-more {
@@ -160,6 +161,10 @@
   border: none;
   cursor: pointer;
   padding: 0 30px;
+  position: absolute;
+  bottom: -100px;
+  left: 50%;
+  transform: translateX(-50%);
 }
 
 .cheer-more:hover {
