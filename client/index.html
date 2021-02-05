@@ -1,0 +1,233 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link href="./dist/css/style.css" rel="stylesheet" />
+    <script defer src="./dist/js/bundle.js"></script>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.2/css/all.min.css"
+      integrity="sha512-HK5fgLBL+xu6dm/Ii3z4xhlSUyZgTT9tuc/hSrtw6uzJOvgRr2a9jyxxT1ely+B+xFAmJKVSTbpM/CuL7qxO8w=="
+      crossorigin="anonymous"
+    />
+    <link
+      href="https://fonts.googleapis.com/icon?family=Material+Icons"
+      rel="stylesheet"
+    />
+    <title>Document</title>
+  </head>
+  <body>
+    <div class="nav__container">
+      <nav class="navigation">
+        <ul class="nav__list">
+          <li>
+            <a href="#header" class="nav-btn">
+              <span class="nav-icon"> 1 </span>
+            </a>
+          </li>
+          <li>
+            <a href="#weather" class="nav-btn">
+              <span class="nav-icon"> 2 </span>
+            </a>
+          </li>
+          <li>
+            <a href="#pictures" class="nav-btn">
+              <span class="nav-icon"> 3 </span>
+            </a>
+          </li>
+          <li>
+            <a href="#twitter" class="nav-btn">
+              <span class="nav-icon"> 4 </span>
+            </a>
+          </li>
+          <li>
+            <a href="#message" class="nav-btn">
+              <span class="nav-icon"> 5 </span>
+            </a>
+          </li>
+        </ul>
+      </nav>
+    </div>
+    <header id="header">
+      <div class="header__container">
+        <h1 class="header__title">PYMO</h1>
+        <div class="d-day__container">
+          <span class="d-desc">D-First City On Mars</span>
+          <span class="d-day"></span>
+          <span class="d-date"></span>
+        </div>
+        <div class="sol__container">
+          <span class="sol">sol 3927</span>
+        </div>
+      </div>
+    </header>
+    <section id="weather" class="weather">
+      <h2 class="weather__heading">
+        Latest Weather <br />
+        at Elysium Planitia
+      </h2>
+      <p class="weather__text">
+        InSight is taking daily weather measurements (temperature, wind,
+        pressure) on the surface of Mars at Elysium Planitia, a flat, smooth
+        plain near Mars' equator.
+      </p>
+
+      <div class="weather__content">
+        <div class="weather__content__date">
+          <div class="weather__content__date__icon">🌞</div>
+          <span class="weather__content__date__sol">Sol <span></span></span>
+          <span class="weather__content__date__earth"><span></span></span>
+        </div>
+
+        <div class="weather__content__temp">
+          <div class="weather__content__temp__icon">🌡</div>
+          <div class="weather__content__temp__high"></div>
+          <div class="weather__content__temp__low"></div>
+        </div>
+
+        <div class="weather__content__wind">
+          <div class="weather__content__wind__icon">🌬</div>
+          <div class="weather__content__wind__high"></div>
+          <div class="weather__content__wind__low"></div>
+        </div>
+      </div>
+    </section>
+    <section id="pictures" class="pictures">
+      <button class="pictures__btn-left">
+        <i class="fas fa-chevron-left"></i>
+      </button>
+      <button class="pictures__btn-right">
+        <i class="fas fa-chevron-right"></i>
+      </button>
+      <figure class="pictures__image"></figure>
+      <figcaption class="pictures__info">
+        <h3 class="pictures__info__heading">Mars, 3 days ago</h3>
+        <span class="pictures__info__name"></span>
+        <span class="pictures__info__date"></span>
+        <span class="pictures__info__rover"></span>
+        <span class="pictures__info__id"></span>
+      </figcaption>
+    </section>
+    <section id="twitter" class="twitter">
+      <article class="profile__container">
+        <img class="profile" src="./img/musk.jpg" alt="Elon Musk Profile" />
+        <div class="desc__container">
+          <span class="desc__title">Elon Musk</span>
+          <span class="desc__contents"
+            >An outstanding engineer, inventor and entrepreneur, co-founder of
+            PayPal, founder of SpaceX, Tesla, SolarCity, and The Boring
+            Company.</span
+          >
+        </div>
+      </article>
+      <ul class="elon-twitter__container twitter__container">
+        <!-- <div class="tweet-prof__container">
+          <div class="tweet-prof-elon-img"></div>
+          <div class="tweet-profile">
+            <span class="tweet-prof__name">Elon Musk</span>
+            <span class="tweet-prof__username">@elonmusk</span>
+          </div>
+          <span class="tweet-prof-desc">#bitcoin</span>
+          <div class="tweet-line">Tweets</div>
+        </div>
+        <li>
+          <div class="tweet-contents__container">
+            <div class="tweet-contents-elon-img"></div>
+            <div class="tweet-contents-item">
+              <div class="tweet-contents-profile">
+                <span class="tweet-prof__name">Elon Musk</span>
+                <span class="tweet-prof__username">@elonmusk</span>
+              </div>
+              <div class="tweet-contents">Off Twitter for a while</div>
+            </div>
+          </div>
+        </li> -->
+      </ul>
+      <article class="profile__container --right">
+        <img
+          class="profile"
+          src="./img/spaceX.jpg"
+          alt="SpaceX Mars Project Picture"
+        />
+        <div class="desc__container --right">
+          <span class="desc__title">SpaceX</span>
+          <span class="desc__contents"
+            >"Today a trip to Mars and life on the red planet seems impossible,
+            but we need to make this dream a reality for our lifetime. Any
+            person who wish to go to Mars, should have the opportunit".</span
+          >
+        </div>
+      </article>
+      <ul class="space-twitter__container twitter__container">
+        <!-- <div class="tweet-prof__container">
+          <div class="tweet-prof-space-img"></div>
+          <div class="tweet-profile">
+            <span class="tweet-prof__name">SpaceX</span>
+            <span class="tweet-prof__username">@SpaceX</span>
+          </div>
+          <span class="tweet-prof-desc"
+            >SpaceX designs, manufactures and launches the world’s most advanced
+            rockets and spacecraft</span
+          >
+          <div class="tweet-line">Tweets</div>
+        </div>
+        <li>
+          <div class="tweet-contents__container">
+            <div class="tweet-contents-space-img"></div>
+            <div class="tweet-contents-item">
+              <div class="tweet-contents-profile">
+                <span class="tweet-prof__name">SpaceX</span>
+                <span class="tweet-prof__username">@SpaceX</span>
+              </div>
+              <div class="tweet-contents">
+                Now targeting two Falcon 9 launches of Starlink satellites on
+                Thursday, February 4, pending range acceptance and recovery
+                weather conditions. First Falcon 9 launch at 1:19 a.m. EST from
+                SLC-40, followed by another Falcon 9 launch ~4 hours later at
+                5:36 a.m. EST from LC-39A
+              </div>
+            </div>
+          </div>
+        </li> -->
+      </ul>
+    </section>
+    <section id="message" class="cheer">
+      <article class="cheer-form__container">
+        <div class="cheer-info">Send Some Messages To Elon Musk!</div>
+        <form action="" class="cheer-form">
+          <label class="label-prof-img" for="image_uploads"></label>
+          <div class="input-msg__container">
+            <input class="input-name" type="text" placeholder="your name?" />
+            <input
+              class="input-msg"
+              type="text"
+              placeholder="cheer up message for Elon Musk"
+            />
+          </div>
+          <button class="submit-msg" type="submit">cheers!</button>
+          <input
+            class="input-prof-img"
+            name="image_uploads"
+            accept="image/*"
+            type="file"
+          />
+        </form>
+      </article>
+      <article class="cheer__container">
+        <ul class="cheer__list">
+          <li class="cheer__item">
+            <div class="profile-img"></div>
+            <div class="user-info">
+              <span class="user-name">hyorard</span>
+              <span class="user-contents">Hi! I'm Hyorard</span>
+            </div>
+            <span class="cheer-time">3 min</span>
+          </li>
+        </ul>
+        <button class="cheer-more">more</button>
+      </article>
+    </section>
+    <footer>footer</footer>
+  </body>
+</html>
