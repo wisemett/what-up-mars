@@ -4,6 +4,8 @@ const fetchTweets = require('./fetch-tweets');
 
 const router = express.Router();
 
+let messages = [];
+
 // get tweets
 router.get('/tweets', async (_, res) => {
   try {
@@ -16,6 +18,27 @@ router.get('/tweets', async (_, res) => {
     const tweetSpace = await fetchTweets(spaceId);
 
     res.json([...userElon, ...userSpace, ...tweetElon, ...tweetSpace]);
+  } catch (error) {
+    console.error(error);
+  }
+});
+
+// get message
+router.get('/message', async (req, res) => {
+  try {
+    res.json(messages);
+  } catch (err) {
+    console.error(err);
+  }
+})
+
+// create message
+router.post('/message', async (req, res) => {
+  try {
+    console.log(req.body);
+    const msgInfo = req.body;
+    messages = [msgInfo, ...messages];
+    res.json(messages);
   } catch (error) {
     console.error(error);
   }
@@ -33,16 +56,6 @@ router.get('/', async (req, res, next) => {
 });
 
 
-// Create One
-router.post('/post', async (req, res, next) => {
-  try {
-    const value = await schema.validateAsync(req.body);
-    const inserted = await pymoDB.insert(value);
-    res.json(inserted);
-  } catch (error) {
-    next(error);
-  }
-});
 
 // Update One
 router.put('/:id', async (req, res, next) => {

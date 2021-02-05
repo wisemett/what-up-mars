@@ -16,7 +16,6 @@ const renderMessage = async () => {
   messages = [...res];
 
   messages = messages.map(({name, contents, time}) => {
-    const 
     const fTime = formatTime(time);
     return {name, contents, fTime};
   });
