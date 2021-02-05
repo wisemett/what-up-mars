@@ -31,16 +31,17 @@
     line-height: 1.4;
     margin-top: 40px;
     &__date,
-    &__temp,
-    &__wind {
+    &__temperature,
+    &__wind-speed,
+    &__pressure {
       background-color: rgba(0, 0, 0, 0.4);
       padding: 10px 20px;
       display: flex;
       flex-flow: column wrap;
       margin-right: 30px;
-      &__icon {
+      &__title {
         align-self: center;
-        font-size: 1.6rem;
+        font-size: 1.2rem;
         margin-bottom: 5px;
       }
     }
