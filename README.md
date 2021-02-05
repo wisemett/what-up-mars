@@ -59,9 +59,7 @@ Team X는 일론 머스크의 도전 정신에 감명을 받아 그를 응원하
 
 2. server 폴더에서 `npm install` 입력
 
-3. server 폴더에 `.env` 파일 생성
-
-(reddream08@gmail.com 으로 메일 보내주시면 알려드리겠습니다.)
+3. server 폴더에 `.env` 파일 생성 (reddream08@gmail.com 으로 메일 보내주시면 알려드리겠습니다.)
 
 4. client 폴더에서 `npm run build` 실행
 
