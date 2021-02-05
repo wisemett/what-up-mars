@@ -37,7 +37,7 @@ Team X는 일론 머스크의 도전 정신에 감명을 받아 그를 응원하
 - [ ]  HTML, Sass, JavaScript.
 - [ ]  Webpack, Babel.
 - [ ]  Express, Morgan, Needle.
-- [ ]  Axios.
+- [ ]  Axios, moment.
 - [ ]  GitFlow.
 
 ## 💥 APIs
