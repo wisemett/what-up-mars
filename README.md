@@ -1,6 +1,6 @@
 # FDS18 - Team X
 
-[![Demo Video](https://www.youtube.com/watch?v=E5333KYviI0&feature=youtu.be)
+![Demo Video](https://www.youtube.com/watch?v=E5333KYviI0&feature=youtu.be)
   
 ## 🚀 Team X
 
