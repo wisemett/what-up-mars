@@ -1,4 +1,4 @@
-const axios = require('axios');
+import axios from 'axios';
 
 const url = 'http://localhost:4967/api/v1/pymo/tweets';
 

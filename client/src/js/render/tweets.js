@@ -5,6 +5,14 @@ const $spaceContainer = document.querySelector('.space-twitter__container');
 const $elonUserInfo = document.querySelector('.elon-tweet-prof__container');
 const $spaceUserInfo = document.querySelector('.space-tweet-prof__container');
 
+const renderTweets = async () => {
+  const twitterData = await getTweets();
+  console.log(twitterData);
+
+  renderUserInfo(twitterData);
+  renderTweetContents(twitterData);
+};
+
 const renderUserInfo = data => {
   $elonUserInfo.innerHTML = `
     <div class="tweet-prof-elon-img"></div>
@@ -55,14 +63,5 @@ const renderTweetContents = data => {
     .join('');
   $elonContainer.innerHTML += `</div></div></li>`;
 }
-
-const renderTweets = async () => {
-  const twitterData = await getTweets();
-  console.log(twitterData);
-
-  renderUserInfo(twitterData);
-  renderTweetContents(twitterData);
-  
-};
 
 export default renderTweets;

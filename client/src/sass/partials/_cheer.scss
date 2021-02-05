@@ -84,9 +84,10 @@
 }
 
 .cheer__container {
-  margin-top: 50px;
+  margin: 50px 0 100px;
   font-size: 1.3rem;
-  color: rgba(255, 255, 255, 0.8);
+  background-color: rgba(255, 255, 255, 0.5);
+  color: #000;
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -96,6 +97,11 @@
   padding: 20px 20px 20px 25px;
   position: relative;
   display: flex;
+  border-bottom: 1px solid #fff;
+}
+
+.cheer__item:last-child {
+  border: none;
 }
 
 .profile-img {
@@ -109,10 +115,12 @@
 
 .user-name {
   display: inline-block;
-  margin-bottom: 15px;
+  margin-bottom: 30px;
+  font-weight: 700;
 }
 
 .user-contents {
+  font-weigth: 400;
 }
 
 .cheer-time {
