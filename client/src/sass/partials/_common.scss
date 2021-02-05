@@ -1,0 +1,16 @@
+@import url('https://fonts.googleapis.com/css2?family=Quantico:wght@700&family=Roboto&family=Ubuntu&display=swap');
+
+@mixin container {
+  margin: 0 auto 500px;
+  width: 1000px;
+}
+
+@mixin offscreen {
+  position: absolute;
+  overflow: hidden;
+  border: 0;
+  width: 1px;
+  height: 1px;
+  clip: rect(1px, 1px, 1px, 1px);
+  clip-path: inset(50%);
+}

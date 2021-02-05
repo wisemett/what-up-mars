@@ -1,0 +1,144 @@
+@import './common';
+
+.twitter {
+  font-family: 'Ubuntu', sans-serif;
+  font-size: 2rem;
+  @include container;
+}
+
+.profile__container {
+  color: rgba(255, 255, 255, 0.8);
+  margin-bottom: 50px;
+  display: flex;
+}
+
+.profile__container.--right {
+  flex-direction: row-reverse;
+}
+
+.profile {
+  width: 500px;
+  height: 300px;
+}
+
+.desc__container {
+  position: relative;
+  top: 4rem;
+  right: 3rem;
+}
+
+.desc__container.--right {
+  text-align: right;
+  left: 3rem;
+}
+
+.desc__title {
+  display: block;
+  color: #fff;
+  font-size: 2rem;
+  margin-bottom: 20px;
+}
+
+.desc__contents {
+  font-size: 1.3rem;
+}
+
+.twitter__container {
+  @include container;
+  margin-top: 50px;
+  margin-bottom: 50px;
+  background-color: rgba(200, 200, 200, 0.6);
+  padding: 15px;
+}
+
+.tweet-item {
+  padding: 10px 0;
+  border-bottom: 1px solid #fff;
+}
+
+.tweet-prof-elon-img {
+  width: 150px;
+  height: 150px;
+  background-image: url('../../img/tweet-elon.jpg');
+  background-position: center;
+  background-size: cover;
+  border-radius: 50%;
+  border: 3px solid #fff;
+}
+
+.tweet-prof-space-img {
+  width: 150px;
+  height: 150px;
+  background-image: url('../../img/tweet-space.jpg');
+  background-position: center;
+  background-size: cover;
+  border-radius: 50%;
+  border: 3px solid #fff;
+}
+
+.tweet-contents-elon-img {
+  width: 100px;
+  height: 100px;
+  background-image: url('../../img/tweet-elon.jpg');
+  background-position: center;
+  background-size: cover;
+  border-radius: 50%;
+  border: 1px solid #fff;
+}
+
+.tweet-contents-space-img {
+  width: 100px;
+  height: 100px;
+  background-image: url('../../img/tweet-space.jpg');
+  background-position: center;
+  background-size: cover;
+  border-radius: 50%;
+  border: 1px solid #fff;
+}
+
+.tweet-profile {
+  margin-top: 10px;
+  display: flex;
+  flex-direction: column;
+}
+
+.tweet-prof__name {
+  font-weight: 700;
+}
+
+.tweet-prof__username {
+  font-size: 1.8rem;
+  font-weight: 400;
+  color: rgba(200, 200, 200, 0.5);
+}
+
+.tweet-prof-desc {
+  display: inline-block;
+  font-size: 1.5rem;
+  font-weight: 400;
+  margin-top: 15px;
+}
+
+.tweet-line {
+  margin-top: 30px;
+  color: rgb(29, 161, 242);
+  border-bottom: 1px solid rgb(29, 161, 242);
+  padding-bottom: 5px;
+  width: 105px;
+  margin-bottom: 15px;
+}
+
+.tweet-contents__container {
+  display: flex;
+}
+
+.tweet-contents-item {
+  width: 90%;
+  margin-left: 15px;
+}
+
+.tweet-contents {
+  margin-top: 15px;
+  font-size: 1.5rem;
+  font-weight: 400;
+}

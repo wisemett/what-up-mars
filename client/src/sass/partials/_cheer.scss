@@ -1,0 +1,139 @@
+@import './common';
+
+@mixin profileImg {
+  width: 120px;
+  height: 120px;
+  background: url('../../img/default-profile.png') transparent;
+  background-size: 120px 120px;
+  margin: 0 15px;
+  border-radius: 50%;
+}
+
+.cheer {
+  @include container;
+  margin-bottom: 0;
+  height: 500px;
+  font-family: 'Ubuntu', sans-serif;
+}
+
+.cheer-form__container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.cheer-info {
+  color: rgba(255, 255, 255, 0.8);
+  font-size: 1.5rem;
+  margin: 15px 0 20px;
+}
+
+.cheer-form {
+  display: flex;
+}
+
+.label-prof-img {
+  @include profileImg;
+}
+
+.input-prof-img {
+  @include offscreen;
+}
+
+.input-msg__container {
+  display: flex;
+  flex-direction: column;
+  margin-right: 15px;
+}
+
+.input-msg__container input {
+  padding-left: 30px;
+}
+
+.input-name {
+  border: 1px solid rgba(255, 255, 255, 0.8);
+  border-radius: 10px;
+  height: 35px;
+  width: 200px;
+  background-color: transparent;
+  color: rgba(255, 255, 255, 0.8);
+  font-size: 1.3rem;
+  box-sizing: border-box;
+  margin-bottom: 15px;
+}
+
+.input-msg {
+  border: 1px solid rgba(255, 255, 255, 0.8);
+  border-radius: 10px;
+  height: 70px;
+  width: 700px;
+  background-color: transparent;
+  color: rgba(255, 255, 255, 0.8);
+  font-size: 1.3rem;
+  box-sizing: border-box;
+}
+
+.submit-msg {
+  background-color: transparent;
+  border: 1px solid rgba(255, 255, 255, 0.8);
+  border-radius: 10px;
+  height: 120px;
+  width: 70px;
+  font-size: 1rem;
+  color: rgba(255, 255, 255, 0.8);
+}
+
+.cheer__container {
+  margin-top: 50px;
+  font-size: 1.3rem;
+  color: rgba(255, 255, 255, 0.8);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.cheer__item {
+  padding: 20px 20px 20px 25px;
+  position: relative;
+  display: flex;
+}
+
+.profile-img {
+  @include profileImg;
+}
+
+.user-info {
+  display: flex;
+  flex-direction: column;
+}
+
+.user-name {
+  display: inline-block;
+  margin-bottom: 15px;
+}
+
+.user-contents {
+}
+
+.cheer-time {
+  position: absolute;
+  top: 15px;
+  right: 15px;
+  font-size: 1rem;
+}
+
+.cheer-more {
+  margin: 0 auto;
+  font-size: 2rem;
+  color: rgba(255, 255, 255, 0.8);
+  background-color: transparent;
+  border: 1px solid rgba(255, 255, 255, 0.8);
+  border-radius: 10px;
+  height: 80px;
+  width: 500px;
+  transition-duration: 500ms;
+}
+
+.cheer-more:hover {
+  font-size: 2.5rem;
+}

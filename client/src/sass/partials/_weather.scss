@@ -1,0 +1,54 @@
+.weather {
+  background-image: url('../../img/tower.jpg');
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  font-family: 'Ubuntu', sans-serif;
+  color: #ddd;
+  padding: 120px 0;
+  padding-left: 5%;
+  @include container;
+  display: flex;
+  flex-flow: column wrap;
+  align-items: flex-start;
+  &__heading {
+    font-size: 3rem;
+    margin: 0 0 10px;
+  }
+  &__text {
+    max-width: 500px;
+    font-size: 1.2rem;
+    font-weight: 300;
+    line-height: 1.2;
+    letter-spacing: 1px;
+    opacity: 0.8;
+  }
+
+  &__content {
+    display: flex;
+    font-size: 1rem;
+    font-weight: 300;
+    line-height: 1.4;
+    margin-top: 40px;
+    &__date,
+    &__temp,
+    &__wind {
+      background-color: rgba(0, 0, 0, 0.4);
+      padding: 10px 20px;
+      display: flex;
+      flex-flow: column wrap;
+      margin-right: 30px;
+      &__icon {
+        align-self: center;
+        font-size: 1.6rem;
+        margin-bottom: 5px;
+      }
+    }
+    &__date {
+      &__sol {
+        font-weight: 600;
+        font-size: 1rem;
+      }
+    }
+  }
+}

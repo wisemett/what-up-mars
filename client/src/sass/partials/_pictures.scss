@@ -1,0 +1,76 @@
+.pictures {
+  background-color: rgba(50, 50, 50, 0.3);
+  font-family: 'Ubuntu', sans-serif;
+  color: #ddd;
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: center;
+  align-items: center;
+  padding: 100px 0;
+  @include container;
+  position: relative;
+  &__btn-left,
+  &__btn-right {
+    border: none;
+    background-color: transparent;
+    color: rgba(100, 100, 100, 0.7);
+    font-size: 3rem;
+    cursor: pointer;
+    position: absolute;
+    top: 50%;
+    &:focus {
+      outline: none;
+    }
+    &:hover {
+      color: rgba(200, 200, 200, 0.7);
+    }
+    &:active {
+      transform: scale(0.9);
+    }
+  }
+  &__btn-left {
+    left: -10%;
+    transform: translateY(-50);
+  }
+  &__btn-right {
+    right: -10%;
+    transform: translateY(-50);
+  }
+  &__image {
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    display: block;
+    width: 400px;
+    height: 400px;
+    transition: opacity 0.5s;
+    &:hover {
+      opacity: 0.8;
+    }
+  }
+  &__info {
+    display: flex;
+    flex-flow: column wrap;
+    padding-left: 40px;
+    font-size: 1.4rem;
+    & > * {
+      margin-top: 10px;
+    }
+    &__heading {
+      font-size: 2.5rem;
+    }
+    &__name {
+      font-size: 1.6rem;
+      font-weight: 600;
+      margin-top: 50px;
+    }
+    &__date {
+    }
+    &__rover {
+      margin-top: 20px;
+    }
+    &__id {
+      font-size: 1.2rem;
+    }
+  }
+}
