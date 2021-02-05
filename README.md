@@ -1,8 +1,6 @@
 # FDS18 - Team X
 
-<video controls="true" allowfullscreen="true" width="500px">
-  <source src="./assets/demo.mov" type="video/mov">
-</video>
+[![Demo Video](https://www.youtube.com/watch?v=E5333KYviI0&feature=youtu.be)
   
 ## 🚀 Team X
 
