@@ -1,10 +1,14 @@
 # FDS18 - Team X
 
-# 🚀 Team X
+## 🎥 Demo Video
 
-    **🧑‍🚀 김효성**
+[Click to watch!](https://www.youtube.com/watch?v=E5333KYviI0&feature=youtu.be)
+  
+## 🚀 Team X
 
-    **🧑‍🚀 박재운**
+    🧑‍🚀 김효성
+
+    🧑‍🚀 박재운
 
 ## 💥 프로젝트 목표
 
@@ -24,7 +28,7 @@ Team X는 일론 머스크의 도전 정신에 감명을 받아 그를 응원하
 
 웹사이트 이름은 **What's up Mars**.
 
-## 💥  웹사이트 구성
+## 💥 웹사이트 구성
 
 1. 화성 도시를 건설할 2030년까지 **남은 날짜**
 2. 가장 최근에 측정된 **화성의 날씨**
@@ -34,16 +38,16 @@ Team X는 일론 머스크의 도전 정신에 감명을 받아 그를 응원하
 
 ## 💥 Tech Stacks
 
-- [ ]  HTML, Sass, JavaScript.
-- [ ]  Webpack, Babel.
-- [ ]  Express, Morgan, Needle.
-- [ ]  Axios, moment.
-- [ ]  GitFlow.
+- [ ] HTML, Sass, JavaScript.
+- [ ] Webpack, Babel.
+- [ ] Express, Morgan, Needle.
+- [ ] Axios, moment.
+- [ ] GitFlow.
 
 ## 💥 APIs
 
-- [ ]  NASA API
-- [ ]  Twitter API
+- [ ] NASA API
+- [ ] Twitter API
 
 ## 💥 Design
 
@@ -55,26 +59,26 @@ Team X는 일론 머스크의 도전 정신에 감명을 받아 그를 응원하
 
 1. client 폴더에서 모듈 설치
 
-  ```
-  npm install
-  ```
+```
+npm install
+```
 
 2. server 폴더에서 모듈 설치
 
-  ```
-  npm install
-  ```
+```
+npm install
+```
 
 3. server 폴더에 `.env` 파일 생성
 
-  reddream08@gmail.com 으로 연락 주시면 알려드리겠습니다.
+reddream08@gmail.com 으로 연락 주시면 알려드리겠습니다.
 
 4. client 빌드
 
-  client 폴더에서 `npm run build` 실행
+client 폴더에서 `npm run build` 실행
 
 5. server 동작
 
-  server 폴더에서 `npm run dev` 실행
+server 폴더에서 `npm run dev` 실행
 
 6. live server로 확인!
