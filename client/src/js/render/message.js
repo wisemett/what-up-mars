@@ -9,6 +9,8 @@ let messages = [];
 
 const watchPost = async (e) => {
   e.preventDefault();
+  if (!$inputName.value || !$inputMsg.value) return;
+
   await message.post();
   $inputName.value = '';
   $inputMsg.value = '';
