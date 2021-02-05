@@ -3,7 +3,8 @@
 .twitter {
   font-family: 'Ubuntu', sans-serif;
   font-size: 1rem;
-  @include container;
+  margin: 0 auto 500px;
+  max-width: 1000px;
   color: #ccc;
 }
 
@@ -11,6 +12,7 @@
   color: rgba(255, 255, 255, 0.8);
   margin-bottom: 50px;
   display: flex;
+  opacity: 0;
 }
 
 .profile__container.--right {
