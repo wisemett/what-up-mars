@@ -105,3 +105,5 @@ dist
 
 .eslintrc.json
 .prettierrc
+
+.DS_Store

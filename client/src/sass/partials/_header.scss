@@ -30,12 +30,12 @@ body {
   font-size: 5.4rem;
   color: rgb(202, 104, 59);
   @include horizonMiddle;
-  top: 30%;
+  top: 25%;
 }
 
 .d-day__container {
   @include horizonMiddle;
-  top: 20%;
+  top: 10%;
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -43,12 +43,14 @@ body {
 }
 
 .d-desc {
-  font-size: 1.2rem;
+  font-size: 1.4rem;
+  margin-bottom: 10px;
 }
 .d-day {
   color: #ddd;
   font-size: 3rem;
   display: block;
+  margin-bottom: 10px;
 }
 
 .d-date {
@@ -57,7 +59,7 @@ body {
 
 .sol__container {
   @include horizonMiddle;
-  top: 40%;
+  top: 35%;
 }
 
 .sol {
