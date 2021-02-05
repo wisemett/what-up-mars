@@ -1,7 +1,7 @@
 # FDS18 - Team X
 
 <video controls="true" allowfullscreen="true" poster="path/to/poster_image.png" style="width: 500px">
-  <source src="path/to/video.mp4" type="video/mp4">
+  <source src="./assets/demo.mov" type="video/mov">
   </video>
 # 🚀 Team X
 
