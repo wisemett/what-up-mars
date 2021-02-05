@@ -4,17 +4,16 @@
   width: 80px;
   height: 80px;
   background: url('../../img/default-profile.png') transparent;
-  background-size: 80px 80px;
-  background-position: 30%;
+  background-size: cover;
+  background-position: center;
   margin: 0 30px 0 0;
   border-radius: 50%;
-  border: #fff solid 5px;
 }
 
 .cheer {
   @include container;
   margin-bottom: 0;
-  height: 500px;
+  // height: 500px;
   font-family: 'Ubuntu', sans-serif;
 }
 
@@ -46,11 +45,6 @@
   @include profileImg;
   width: 120px;
   height: 120px;
-  background: url('../../img/default-profile.png') transparent;
-  background-size: 120px 120px;
-  background-position: 30%;
-  border-radius: 50%;
-  border: #fff solid 5px;
   margin-right: 0;
 }
 
@@ -108,18 +102,18 @@
 .cheer__container {
   margin-top: 20px;
   font-size: 1.3rem;
-  background-color: rgba(255, 255, 255, 0.5);
-  color: #000;
+  color: #fff;
   display: flex;
   flex-direction: column;
   justify-content: center;
+  position: relative;
 }
 
 .cheer__item {
   padding: 20px 20px 20px 25px;
   position: relative;
   display: flex;
-  border-bottom: 1px solid #fff;
+  border-bottom: 1px solid rgba(200, 200, 200, 0.3);
 }
 
 .cheer__item:last-child {
@@ -150,6 +144,7 @@
   right: 40px;
   font-size: 1.2rem;
   font-weight: 700;
+  color: #bbb;
 }
 
 .cheer-more {
@@ -160,8 +155,16 @@
   border: none;
   cursor: pointer;
   padding: 0 30px;
+  position: absolute;
+  bottom: -80px;
+  left: 50%;
+  transform: translateX(-50%);
 }
 
 .cheer-more:hover {
   color: rgba(200, 200, 200, 0.6);
+}
+
+.cheer-more:active {
+  transform: translateX(-50%) scale(0.9);
 }

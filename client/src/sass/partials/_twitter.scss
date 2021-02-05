@@ -14,6 +14,7 @@
 }
 
 .profile__container.--right {
+  margin-top: 100px;
   flex-direction: row-reverse;
 }
 
@@ -49,7 +50,7 @@
   @include container;
   margin-top: 50px;
   margin-bottom: 50px;
-  background-color: rgba(100, 100, 100, 0.2);
+  background-color: rgba(100, 100, 100, 0.3);
   padding: 15px;
   padding-bottom: 5px;
 }
@@ -110,12 +111,13 @@
 }
 
 .tweet-prof__name {
-  font-size: 1.2rem;
+  font-size: 1.4rem;
   font-weight: 700;
+  margin-bottom: 3px;
 }
 
 .tweet-prof__username {
-  font-size: 1.2rem;
+  font-size: 1rem;
   font-weight: 400;
   color: rgba(200, 200, 200, 0.5);
 }
@@ -130,7 +132,7 @@
 .tweet-line {
   margin-top: 30px;
   color: rgb(29, 161, 242);
-  border-bottom: 1px solid rgb(29, 161, 242);
+  border-bottom: 2px solid rgb(29, 161, 242);
   padding-bottom: 5px;
   width: 50px;
   margin-bottom: 15px;

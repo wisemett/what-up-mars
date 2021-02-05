@@ -27,27 +27,39 @@ body {
 }
 
 .header__title {
-  font-size: 8rem;
-  color: rgb(190, 57, 29);
+  font-size: 5.4rem;
+  color: rgb(202, 104, 59);
   @include horizonMiddle;
-  top: 25%;
+  top: 30%;
 }
 
 .d-day__container {
   @include horizonMiddle;
-  top: 10%;
+  top: 20%;
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
 }
 
+.d-desc {
+  font-size: 1.2rem;
+}
 .d-day {
-  font-size: 4rem;
+  color: #ddd;
+  font-size: 3rem;
   display: block;
+}
+
+.d-date {
+  font-size: 1.6rem;
 }
 
 .sol__container {
   @include horizonMiddle;
   top: 40%;
+}
+
+.sol {
+  color: #aaa;
 }
