@@ -53,32 +53,16 @@ Team X는 일론 머스크의 도전 정신에 감명을 받아 그를 응원하
 
 ![FDS18%20-%20Team%20X%20e1770dda11124c95be12bd033abb4f6d/Desktop_-_1.png](./assets/design.png)
 
-## 키는 법
+## 💾 Project Setup
 
-레포지토리 클론 후
+1. client 폴더에서 `npm install` 입력
 
-1. client 폴더에서 모듈 설치
+2. server 폴더에서 `npm install` 입력
 
-```
-npm install
-```
+3. server 폴더에 `.env` 파일 생성 (reddream08@gmail.com 으로 메일 보내주시면 알려드리겠습니다.)
 
-2. server 폴더에서 모듈 설치
+4. client 폴더에서 `npm run build` 실행
 
-```
-npm install
-```
+5. server 폴더에서 `npm run dev` 실행
 
-3. server 폴더에 `.env` 파일 생성
-
-reddream08@gmail.com 으로 연락 주시면 알려드리겠습니다.
-
-4. client 빌드
-
-client 폴더에서 `npm run build` 실행
-
-5. server 동작
-
-server 폴더에서 `npm run dev` 실행
-
-6. live server로 확인!
+6. `live server` 입력
