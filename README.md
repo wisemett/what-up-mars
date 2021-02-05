@@ -1,13 +1,13 @@
 # FDS18 - Team X
 
-<video controls="true" allowfullscreen="true" poster="path/to/poster_image.png" style="width: 500px">
+<video controls="true" allowfullscreen="true" width="500px">
   <source src="./assets/demo.mov" type="video/mov">
   </video>
-# 🚀 Team X
+## 🚀 Team X
 
-    **🧑‍🚀 김효성**
+    __🧑‍🚀 김효성__
 
-    **🧑‍🚀 박재운**
+    __🧑‍🚀 박재운__
 
 ## 💥 프로젝트 목표
 
