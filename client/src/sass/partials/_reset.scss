@@ -141,3 +141,44 @@ a {
   text-decoration: none;
   color: inherit;
 }
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+button:focus {
+  outline: none;
+}
+
+button:active {
+  transform: scale(0.9);
+}
+
+input {
+  border: none;
+}
+
+input:focus {
+  outline: none;
+}
+
+input:focus::placeholder {
+  color: #ccc;
+  transition: color 0.3s;
+}
+
+textarea {
+  border: none;
+  resize: none;
+}
+
+textarea:focus {
+  outline: none;
+}
+
+textarea:focus::placeholder {
+  color: #ccc;
+  transition: color 0.3s;
+}
