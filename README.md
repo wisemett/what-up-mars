@@ -2,12 +2,13 @@
 
 <video controls="true" allowfullscreen="true" width="500px">
   <source src="./assets/demo.mov" type="video/mov">
-  </video>
+</video>
+  
 ## 🚀 Team X
 
-    __🧑‍🚀 김효성__
+    🧑‍🚀 김효성
 
-    __🧑‍🚀 박재운__
+    🧑‍🚀 박재운
 
 ## 💥 프로젝트 목표
 
