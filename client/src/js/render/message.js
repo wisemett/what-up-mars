@@ -1,5 +1,5 @@
 import message from '../axios/message';
-import formatTime from '../utils/formatMessage';
+import formatTime from '../utils/format-message';
 
 const $msgList = document.querySelector('.cheer__list');
 const $submitBtn = document.querySelector('.submit-msg');

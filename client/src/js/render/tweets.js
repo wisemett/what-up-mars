@@ -7,13 +7,12 @@ const $spaceUserInfo = document.querySelector('.space-tweet-prof__container');
 
 const renderTweets = async () => {
   const twitterData = await getTweets();
-  console.log(twitterData);
 
   renderUserInfo(twitterData);
   renderTweetContents(twitterData);
 };
 
-const renderUserInfo = data => {
+const renderUserInfo = (data) => {
   $elonUserInfo.innerHTML = `
     <div class="tweet-prof-elon-img"></div>
     <div class="tweet-profile">
@@ -32,12 +31,12 @@ const renderUserInfo = data => {
     <span class="tweet-prof-desc">${data.spaceInfo.description}</span>
     <div class="tweet-line">Tweets</div>
   `;
-}
+};
 
-const renderTweetContents = data => {
+const renderTweetContents = (data) => {
   $elonContainer.innerHTML += [...data.elonTweets]
     .map(
-      tweet => `<li class="tweet-item">
+      (tweet) => `<li class="tweet-item">
     <div class="tweet-contents__container">
       <div class="tweet-contents-elon-img"></div>
       <div class="tweet-contents-item">
@@ -51,7 +50,7 @@ const renderTweetContents = data => {
 
   $spaceContainer.innerHTML += [...data.spaceTweets]
     .map(
-      tweet => `<li class="tweet-item">
+      (tweet) => `<li class="tweet-item">
     <div class="tweet-contents__container">
       <div class="tweet-contents-space-img"></div>
       <div class="tweet-contents-item">
@@ -62,6 +61,6 @@ const renderTweetContents = data => {
     )
     .join('');
   $elonContainer.innerHTML += `</div></div></li>`;
-}
+};
 
 export default renderTweets;
