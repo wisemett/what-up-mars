@@ -1,3 +1,5 @@
-import renderWeather from '../js/render/weather';
+import renderWeather from './render/weather';
+import renderPictures from './render/pictures';
 
 renderWeather();
+renderPictures();
