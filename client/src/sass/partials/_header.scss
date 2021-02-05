@@ -6,6 +6,31 @@
   transform: translateX(-50%);
 }
 
+@keyframes start {
+  0% {
+    opacity: 0;
+    letter-spacing: 15px;
+    font-size: 3rem;
+  }
+  20% {
+    opacity: 0.2;
+  }
+  100% {
+    opacity: 1;
+    letter-spacing: 0;
+    font-size: 6rem;
+  }
+}
+
+@keyframes opacity {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
 body {
   background: url('../../img/background.jpg') repeat-y center center fixed;
   background-size: cover;
@@ -27,10 +52,11 @@ body {
 }
 
 .header__title {
-  font-size: 5.4rem;
   color: rgb(202, 104, 59);
   @include horizonMiddle;
-  top: 25%;
+  top: 23%;
+  animation: start 1.4s ease-in both;
+  animation-delay: 1s;
 }
 
 .d-day__container {
@@ -40,6 +66,9 @@ body {
   flex-direction: column;
   justify-content: center;
   align-items: center;
+  opacity: 0;
+  animation: opacity 2s ease-in both;
+  animation-delay: 3s;
 }
 
 .d-desc {
@@ -60,6 +89,9 @@ body {
 .sol__container {
   @include horizonMiddle;
   top: 35%;
+  opacity: 0;
+  animation: opacity 2s ease-in both;
+  animation-delay: 2.2s;
 }
 
 .sol {
