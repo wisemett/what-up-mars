@@ -3,7 +3,7 @@ const axios = require('axios');
 // Insight 데이터 가져오기
 const getInsight = async () => {
   const { data } = await axios.get(
-    'https://api.nasa.gov/insight_weather/?api_key=DEMO_KEY&feedtype=json&ver=1.0'
+    'https://api.nasa.gov/insight_weather/?api_key=cUgR2SIJprvsJ1TzLiL8jobMJxMOhCj7J1JJHIsM&feedtype=json&ver=1.0'
   );
 
   return data;
