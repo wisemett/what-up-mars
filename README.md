@@ -2,7 +2,7 @@
 
 ## 🎥 Demo Video
 
-[Click to watch!](https://www.youtube.com/watch?v=E5333KYviI0&feature=youtu.be)
+![demo](./assets/demo.gif)
   
 ## 🚀 Team X
 
